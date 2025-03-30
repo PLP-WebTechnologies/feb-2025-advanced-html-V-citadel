@@ -1,0 +1,137 @@
+<!-- A website designed to jog my memory on class work-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEEK TWO ASSIGNMENT</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Building & Enhancing Forms</h1>
+
+    <h2>Objectives of the Lesson</h2>
+    <ol type="I">
+        <li>Create a form using HTML</li>
+        <li>Add form elements</li>
+        <li>Add form attributes</li>
+    </ol>
+
+    <h2>Incorporating Images from an External Source</h2>
+    <p>Let us incorporate an image from Pexels:</p>
+    <img src="https://images.pexels.com/photos/46254/leopard-wildcat-big-cat-botswana-46254.jpeg?auto=compress&cs=tinysrgb&w=600/"
+         alt="Leopard on a tree trunk" style="height: 500px; width: 500px;">
+>
+
+    <h2>Creating Tables in HTML</h2>
+    
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Vincent</td>
+            <td>12112 Nakuru</td>
+            <td>0701755984</td>
+            <td>vinnieoranjo@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Vincent karanja</td>
+            <td>12112 Nakuru</td>
+            <td>0701755984</td>
+            <td>vinnieoranjo@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Vincent karanja</td>
+            <td>12112 Nakuru</td>
+            <td>0701755984</td>
+            <td>vinnieoranjo@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Vincent karanja</td>
+            <td>12112 Nakuru</td>
+            <td>0701755984</td>
+            <td>vinnieoranjo@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Vincent karanja</td>
+            <td>12112 Nakuru</td>
+            <td>0701755984</td>
+            <td>vinnieoranjo@gmail.com</td>
+        </tr>
+    </table>
+
+    <form action="submit" method="POST">
+        <h2>School Registration</h2>
+        <p>Fill in the form below to register:</p>
+
+        <div>
+            <label for="firstName">First name</label><br>
+            <input type="text" name="firstName" id="firstName" placeholder="first name" required><br><br>
+        </div>
+
+        <div>
+            <label for="lastName">Last name</label><br>
+            <input type="text" name="lastName" id="lastName" placeholder="last name" required><br><br>
+        </div>
+
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="email" required><br><br>
+        </div>
+
+        <div>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="enter your password" required><br><br>
+        </div>
+
+        <div>
+            <label for="county">Please indicate your County</label>
+            <select id="county" name="county" required>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Machakos">Machakos</option>
+            </select>
+            <br><br>
+        </div>
+
+        <div>
+            <label>Indicate your Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label>Select Your elective subjects:</label><br>
+            <input type="checkbox" id="maths" name="subjects" value="maths">
+            <label for="maths">Maths</label><br>
+            <input type="checkbox" id="science" name="subjects" value="science">
+            <label for="science">Science</label><br>
+            <input type="checkbox" id="history" name="subjects" value="history">
+            <label for="history">History</label><br>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
